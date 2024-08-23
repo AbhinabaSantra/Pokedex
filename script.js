@@ -9,7 +9,7 @@ pokedex.forEach((pokemon)=>{
             <span class="name">${pokemon.name}</span>
             <div class="type">
                 <span class="type1">${pokemon.type1}</span>
-                <span class="type2">${(pokemon.type2) ? `/${pokemon.type2}` : ''}</span>
+                <span class="type2">${(pokemon.type2) ? `/ ${pokemon.type2}` : ''}</span>
             </div>
             <div>
                 <span class="pokedex-number">${pokemon.pokedexNumber}</span>
