@@ -3,19 +3,22 @@ import {pokedex} from "./data/data.js";
 let wrapperInner = '';
 //updating the webpage using DOM
 pokedex.forEach((pokemon)=>{
-    wrapperInner+=`<div class="pokedata">
-        <div class="pokemon" data-name=${pokemon.name} data-pokedexNumber='${pokemon.pokedexNumber}'>
-            <img src="images/Pokemon-Dataset/${pokemon.name}.png">
-            <span class="name">${pokemon.name}</span>
-            <div class="type">
-                <span class="type1">${pokemon.type1}</span>
-                <span class="type2">${(pokemon.type2) ? `/ ${pokemon.type2}` : ''}</span>
-            </div>
-            <div>
-                <span class="pokedex-number">${pokemon.pokedexNumber}</span>
+    wrapperInner+=`
+    <a href="pokemon-details.html">
+        <div class="pokedata">
+            <div class="pokemon" data-name=${pokemon.name} data-pokedexNumber='${pokemon.pokedexNumber}'>
+                <img src="images/Pokemon-Dataset/${pokemon.name}.png">
+                <span class="name">${pokemon.name}</span>
+                <div class="type">
+                    <span class="type1">${pokemon.type1}</span>
+                    <span class="type2">${(pokemon.type2) ? `/ ${pokemon.type2}` : ''}</span>
+                </div>
+                <div>
+                    <span class="pokedex-number">${pokemon.pokedexNumber}</span>
+                </div>
             </div>
         </div>
-        </div>
+    </a>
     `;
 })
 document.querySelector('.wrapper').innerHTML=wrapperInner;
@@ -34,3 +37,9 @@ document.querySelector('.searchbar')
             }
         })
     });
+
+// document.querySelectorAll('.pokedata').forEach((pokemon)=>{
+//     pokemon.addEventListener('click',()=>{
+//         console.log(pokemon.querySelector('.pokemon').dataset);
+//     });
+// });
