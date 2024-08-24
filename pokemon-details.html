@@ -6,11 +6,44 @@
     <title></title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='pokemonDetailStyle.css'>
-    <script src='pokemonDetailScript.js' defer></script>
+    <script type="module" src='pokemonDetailScript.js' defer></script>
 </head>
 <body>
     <main>
-        <div class="page2"></div>
+        <div class="head">
+            <p class="name">BULBASAUR</p>
+            <p class="number">#0001</p>
+        </div>
+        <div class="details">
+            <div class="image">
+                <img src="images/Pokemon-Dataset/bulbasaur.png" alt="bulbasaur">
+            </div>
+            <div class="pokemon-info">
+                <div class="basic">
+                    <p class="height"> height : 0.7 m</p>
+                    <p class="weight"> weight : 0.9 kg</p>
+                    <p class="ability">ability : overgrow, chlorophyll</p>
+                </div>  
+                <div class="progress">
+                    <span>HP</span>
+                    <progress class="stat hp" value="49" max="250"></progress>
+                    <span>ATK</span>
+                    <progress class="stat attack" value="49" max="165"></progress>
+                    <span>DEF</span>
+                    <progress class="stat defense" value="49" max="200"></progress>
+                    <span>SPA</span>
+                    <progress class="stat sp-attack" value="65" max="170"></progress>
+                    <span>SPD</span>
+                    <progress class="stat sp-defense" value="65" max="200"></progress>
+                    <span>SPE</span>
+                    <progress class="stat speed" value="45" max="150"></progress>
+                    <span>BST</span>
+                    <progress class="stat base Total" value="318" max="780"></progress>
+                </div>
+                
+            </div>
+        </div>
+        
     </main>
 </body>
 </html>

@@ -1,5 +1,66 @@
-.page2{
-    height: 500px;
-    width:500px;
-    background-color: #50afcf;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+}
+body{
+    background: #c0c0aa;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.head{
+    padding:30px 0px;
+    display: flex;
+    gap:15px;
+    font-size: 40px;
+    margin-bottom:40px;
+}
+.number{
+    color:#585858
+}
+.details{
+    display: flex;
+    gap:40px;
+}
+.image{
+    margin:0px 35px;
+}
+.pokemon-info{
+    display: flex;
+    flex-direction:column;
+    gap:40px;
+}
+.basic{
+    font-size: 18px;
+}
+.progress{
+    display: flex;
+    flex-direction: column;
+}
+.stat{
+    width:100%;
+    height:15px;
+    border: none;
+}
+.stat::-webkit-progress-bar{
+    border-radius: 14px;
+    background-color: transparent;
+}
+.stat::-webkit-progress-value{
+    background-color: #3d78c1;
+    border-radius: 14px;
+}
+.progress span{
+    padding-left: 10px;
+    padding-top: 20px;
 }

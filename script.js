@@ -38,8 +38,4 @@ document.querySelector('.searchbar')
         })
     });
 
-// document.querySelectorAll('.pokedata').forEach((pokemon)=>{
-//     pokemon.addEventListener('click',()=>{
-//         console.log(pokemon.querySelector('.pokemon').dataset);
-//     });
-// });
+
