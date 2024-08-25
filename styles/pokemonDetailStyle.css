@@ -17,6 +17,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 60px;
 }
 .head{
     padding:30px 0px;
@@ -34,6 +35,10 @@ main{
 }
 .image{
     margin:0px 35px;
+    padding-right: 50px;
+}
+.image img{
+    height:400px;
 }
 .pokemon-info{
     display: flex;
@@ -63,4 +68,60 @@ main{
 .progress span{
     padding-left: 10px;
     padding-top: 20px;
+}
+.outer{
+    display: flex;
+    
+    flex-direction: column;
+    
+    padding:50px;
+    margin:0px 200px 200px 200px;
+    background-color: rgba(33, 128, 195, 0.26);
+    box-shadow: 10px 10px 40px rgba(14, 55, 83, 0.401) ;
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+}
+.img-pokeEvo{
+    height: 180px;
+    
+}
+.forward-arrow{
+    font-size: 70px;
+}
+.stage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:250px;
+    width:250px;
+    border-radius : 50%;
+    background-color: transparent;
+    border:1px rgb(0, 0, 0) solid;
+    backdrop-filter:blur(10px);
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.3) , -5px -5px 10px rgba(255, 255, 255, 0.3);
+}
+.evolutionLines{
+    margin-bottom:30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    /* color: white; */
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+}
+.evolution{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inner p{
+    /* color:white; */
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-top:10px;
+    
 }
