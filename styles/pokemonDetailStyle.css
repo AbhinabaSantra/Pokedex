@@ -123,5 +123,33 @@ main{
     font-size: 25px;
     text-transform: capitalize;
     margin-top:10px;
+    margin-bottom:30px;
+}
+.branchedEvo,
+.main,
+.branched{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:25px;
+    font-weight: normal;
     
+}
+.main{
+    margin-right:100px;
+    gap:60px;
+}
+.branched .img-pokeEvo{
+    height:120px;
+}
+.branched .stage{
+    height:150px;
+    width:150px;
+}
+.branched{
+    flex-direction: column;
+}
+.main .forward-arrow{
+    margin-bottom:50px;
+    margin-left: 20px;
 }
