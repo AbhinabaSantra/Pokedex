@@ -1,4 +1,4 @@
-import {pokedex} from "./data/data.js";
+import {pokedex} from "../data/data.js";
 
 let wrapperInner = '';
 //updating the webpage using DOM
