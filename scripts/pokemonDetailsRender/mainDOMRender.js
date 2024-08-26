@@ -50,9 +50,9 @@ function displayPokemondata(pokeData){
             </div>
             <div class="pokemon-info">
                 <div class="basic">
-                    <p class="height"> height : ${pokeData.height_m} m</p>
-                    <p class="weight"> weight : ${pokeData.weight_kg} kg</p>
-                    <p class="ability">ability : ${displayAbility(pokeData.abilities)}</p>
+                    <p class="height"> height : ${(pokeData.height_m)?`${pokeData.height_m} m` : 'unknown'}</p>
+                    <p class="weight"> weight : ${(pokeData.weight_kg)?`${pokeData.weight_kg} kg` : 'unknown'}</p>
+                    <div class="ability"><span>ability : </span><p>${displayAbility(pokeData.abilities)}</p></div>
                 </div>  
                 <div class="progress">
                     <span>HP</span>

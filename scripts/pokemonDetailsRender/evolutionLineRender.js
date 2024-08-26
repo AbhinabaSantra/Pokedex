@@ -2,8 +2,8 @@ import { evolution } from "../../data/evolution.js";
 import { getPokedexNumber } from "./pokemonNumberGetter.js";
 import { pokedex } from "../../data/data.js";
 
+getPokedexNumber();
 export function evolutionRender(){
-    getPokedexNumber();
     if(document.querySelector('.evolution')){
         const selectedPokedexNumber = Number(localStorage.getItem('pokemonNumber'));
         searchEvolutionLine(selectedPokedexNumber);

@@ -10,7 +10,8 @@ body{
     background: #c0c0aa;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1cefff, #c0c0aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    position:relative;
+    
 }
 main{
     display: flex;
@@ -22,9 +23,12 @@ main{
 .head{
     padding:30px 0px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap:15px;
     font-size: 40px;
     margin-bottom:40px;
+    width:1200px;
 }
 .number{
     color:#585858
@@ -46,6 +50,9 @@ main{
     gap:40px;
 }
 .basic{
+    display: flex;
+    flex-direction: column;
+    gap:7px;
     font-size: 18px;
 }
 .progress{
@@ -53,7 +60,7 @@ main{
     flex-direction: column;
 }
 .stat{
-    width:100%;
+    width:400px;
     height:15px;
     border: none;
 }
@@ -152,4 +159,36 @@ main{
 .main .forward-arrow{
     margin-bottom:50px;
     margin-left: 20px;
+}
+.arrow{
+    font-size:100px;
+    transition: all 1ms ;
+}
+.forward-button,
+.backward-button{
+    position:absolute;
+    top:45vh;
+}
+.backward-button{
+    left:15px;
+}
+.forward-button{
+    left:calc(95vw - 15px);
+}
+.arrow:hover{
+    cursor: pointer;
+}
+.ability{
+    display: flex;
+}
+.ability p{
+    text-wrap: wrap;
+    max-width: 500px;
+}
+.ability span{
+    width:105px;
+    margin-right:10px;
+}
+.arrow:active{
+    transform: scale(0.9);
 }
