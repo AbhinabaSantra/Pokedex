@@ -63,19 +63,25 @@ button{
 section{
     width:75vw;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 }
-.weak-type{
+.weak-type,.immune-type{
     display: flex;
 }
-.weak-type p{
+:is(.weak-type,.immune-type) p{
     letter-spacing: 0;
     
     margin:10px;
     padding: 10px 20px;
     border-radius:30px;
 }
-.weakness p{
+:is(.weakness,.immunity) p{
     margin-bottom:8px;
+}
+.error{
+    color:red;
+    font-size:16px;
+    letter-spacing: 1px;
 }
