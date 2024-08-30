@@ -1,5 +1,5 @@
 import { pokemonDetails } from "../../data/pokemon-details.js";
-import { HTMLRenderBattleDataSection,colorBasedOnType,weakness,immunities,intializingVaribles } from "./internalOperationOnclick.js";
+import { HTMLRenderBattleDataSection,colorBasedOnType,weakness,immunities,intializingVaribles,suggestedPokemon} from "./internalOperationOnclick.js";
 
 const byNameInput=document.querySelector('.pokeName') ;
 export function onclickByNameButton(){
@@ -18,8 +18,10 @@ function searchPokemonName(pokemonName) {
     const inputPokemon = pokemonDetails.find((pokemon) =>
         pokemon.name.toLowerCase() === pokemonName.toLowerCase()
     );
+
     weakness(inputPokemon.type1);
     immunities(inputPokemon.type1);
+    suggestedPokemon();
 }
 
 function callAllFunctions(){

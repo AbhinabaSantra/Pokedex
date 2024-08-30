@@ -22,7 +22,7 @@ import { getPokedexNumber } from "./pokemonNumberGetter.js";
 //main function 
 getPokedexNumber();
 export function DOMmainRender(){
-    if(document.querySelector('main')){
+    if(document.querySelector('.pokemonDetailsMain')){
         const selectedPokemonNumber = localStorage.getItem('pokemonNumber');
         if (selectedPokemonNumber){ 
             pokemonDetails.forEach((pokemon)=>{
@@ -30,7 +30,7 @@ export function DOMmainRender(){
                     const pokeData = pokemon;
                     updatePageNameIcon(pokeData);
                     const pokemonData=displayPokemondata(pokeData);
-                    document.querySelector('main').innerHTML = pokemonData;
+                    document.querySelector('.pokemonDetailsMain').innerHTML = pokemonData;
                 }
             });
         };
