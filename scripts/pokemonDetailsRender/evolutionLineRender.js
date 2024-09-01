@@ -44,7 +44,7 @@ function generateEvolutionHTML(evolutionLine){
         evolutionHTML += `
             <div class= "inner">
                 <div class="stage stage${index+1}">
-                    <img class="img-pokeEvo" src="images/Pokemon-Dataset/${pokemonStage.name}.png" alt=${pokemonStage.name}>
+                    <img class="img-pokeEvo" src="images/Pokemon-Dataset/${pokemonStage.name.toLowerCase()}.png" alt=${pokemonStage.name}>
                 </div>
                 <p> ${pokemonStage.name} </p>
             </div>
