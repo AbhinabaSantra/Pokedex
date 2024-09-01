@@ -46,7 +46,7 @@ function displayPokemondata(pokeData){
         </div>
         <div class="details">
             <div class="image">
-                <img src="images/Pokemon-Dataset/${pokeData.name}.png" alt="${pokeData.name}">
+                <img src="images/Pokemon-Dataset/${pokeData.name.toLowerCase()}.png" alt="${pokeData.name}">
             </div>
             <div class="pokemon-info">
                 <div class="basic">
