@@ -117,7 +117,6 @@ function suggestionDOMHTML(suggestion){
     `;
     while(i!=12 && i<suggestion.length){
         sectionHTML += `
-            <a href="pokemon-details.html">
                 <div class="pokedata">
                     <div class="pokemon" data-name=${suggestion[i].name} data-pokedexNumber='${suggestion[i].pokedexNumber}'>
                         <img src="images/Pokemon-Dataset/${suggestion[i].name}.png">
@@ -131,7 +130,6 @@ function suggestionDOMHTML(suggestion){
                         </div>
                     </div>
                 </div>
-            </a>
         `;
         i++
     };

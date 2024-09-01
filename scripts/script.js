@@ -7,7 +7,7 @@ pokedex.forEach((pokemon)=>{
     <a href="pokemon-details.html">
         <div class="pokedata">
             <div class="pokemon" data-name=${pokemon.name} data-pokedexNumber='${pokemon.pokedexNumber}'>
-                <img src="images/Pokemon-Dataset/${pokemon.name}.png">
+                <img src="images/Pokemon-Dataset/${pokemon.name.toLowerCase()}.png">
                 <span class="name">${pokemon.name}</span>
                 <div class="type">
                     <span class="type1">${pokemon.type1}</span>

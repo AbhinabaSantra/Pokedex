@@ -8,6 +8,7 @@ export function getPokedexNumber(){
                 pokemon.addEventListener('click',()=>{
                     const pokedexNumber =pokemon.querySelector('.pokemon').dataset.pokedexnumber;
                     localStorage.setItem('pokemonNumber',pokedexNumber);
+                    localStorage.setItem('h','in');
                 });
             });
         }
