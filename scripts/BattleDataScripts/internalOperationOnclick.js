@@ -119,7 +119,7 @@ function suggestionDOMHTML(suggestion){
         sectionHTML += `
                 <div class="pokedata">
                     <div class="pokemon" data-name=${suggestion[i].name} data-pokedexNumber='${suggestion[i].pokedexNumber}'>
-                        <img src="images/Pokemon-Dataset/${suggestion[i].name}.png">
+                        <img src="images/Pokemon-Dataset/${suggestion[i].name.toLowercase()}.png">
                         <span class="name">${suggestion[i].name}</span>
                         <div class="type">
                             <span class="type1">${suggestion[i].type1}</span>
